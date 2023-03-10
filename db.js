@@ -5,7 +5,7 @@ let dbConnection;
 module.exports = {
     // function to connect to the database
     connectToDb: (cb) => {
-        MongoClient.connect('mongodb://localhost:27017/bookstore')
+        MongoClient.connect('mongodb+srv://EvanilsonP:88813091a@cluster0.rq4v2yp.mongodb.net/?retryWrites=true&w=majority')
         .then((client) => {
             dbConnection = client.db();
             return cb();
